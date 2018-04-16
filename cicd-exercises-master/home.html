@@ -79,7 +79,10 @@
 
 <script>
   function testTheTruth() {
-    testResults('1 is equal to 1', 1 === 1);
+    	testResults('1 is equal to 1', 1 === 1);
+	testResults('2 is mayor to 1', 2 > 1);
+	testResults('El nombre esta en mayusculas', changeNameToUppercase('Luis') === 'LUIS');
+	testResults('El anio es 2018', greeting('Luis').indexOf('2018') > -1);
   }
   (function() {
     testTheTruth();
